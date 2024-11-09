@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding-top: 4rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+
+    background: #000;
+    color: #fff;
+}
+
+/* @font-face {
+    font-family: Bahnschrift-VF;
+    src: url(/Bahnschrift-VF.ttf);
+} */
+
+.title {
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+/* -------------------------------- */
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContainer>a {
+    text-decoration: none;
+    display: flex;
+}
+
+/* -------------------------------- */
+
+.card {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #494949;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #444;
+}
+
+.card>img {
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.cardWide {
+    height: 20rem;
+    width: 40rem;
+    max-width: 100vw;
+    max-height: 50vw;
+}
+
+.cardSquare {
+    height: 20rem;
+    width: 20rem;
+    max-width: 100vw;
+    max-height: 100vw;
+}
+
+.cardSquare>img {
+    max-width: 12rem;
+}
+
+.cardTitle {
+    font-family: Bahnschrift-VF, Bahnschrift, sans-serif;
+    text-align: center;
+}
+
+.cardWide>.cardTitle {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.cardSquare>.cardTitle {
+    margin-top: 1rem;
+    color: #888;
+    font-size: 2rem;
+}
+
+/* -------------------------------- */
+
+.footer {
+    width: 100%;
+    background: #494949;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer>a {
+    margin: 0 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    color: unset;
+    text-decoration: none;
+}
